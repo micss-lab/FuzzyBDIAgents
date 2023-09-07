@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="*.asl" kind="src" path="src/asl"/>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="lib" path="C:/Users/Burak/OneDrive - Universiteit Antwerpen/Bureaublad/BrickPI/latest_code/brick-project/lib/news/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Burak/OneDrive - Universiteit Antwerpen/Bureaublad/BrickPI/latest_code/brick-project/lib/news/ev3dev-lang-java-2.6.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Burak/OneDrive - Universiteit Antwerpen/Bureaublad/BrickPI/latest_code/brick-project/lib/news/jna-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Burak/OneDrive - Universiteit Antwerpen/Bureaublad/BrickPI/latest_code/brick-project/lib/news/lejos-commons-0.7.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Burak/OneDrive - Universiteit Antwerpen/Bureaublad/BrickPI/latest_code/brick-project/lib/news/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Burak/OneDrive - Universiteit Antwerpen/Bureaublad/BrickPI/latest_code/brick-project/lib/news/slf4j-simple-1.7.25.jar"/>
+	<classpathentry kind="lib" path="lib/ant-1.10.5.jar"/>
+	<classpathentry kind="lib" path="lib/ant-launcher-1.10.5.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/ev3dev-lang-java-2.6.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/jaca-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/jade.jar"/>
+	<classpathentry kind="lib" path="lib/jade-4.3.jar"/>
+	<classpathentry kind="lib" path="lib/jna-4.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/lejos-commons-0.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/jason-2.6.3/libs/jason-2.6.3.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
