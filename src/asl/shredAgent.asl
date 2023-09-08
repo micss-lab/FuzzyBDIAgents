@@ -39,7 +39,7 @@ emergencyLocked(false).
 			 											
 			
 // For (stop) we directly stop the motor.								
-				 											
+// Fuzzified plan emergency.				 											
 +!emergency : isit(low) <- ?speedEmg(low,D1); .print("low triggered"); ?speed(Speed); changeConveyorSpeed(Speed,1-D1);  !checkEmergency.      //.print("No emergency conveyor is started again.");                       //startConveyor.
 
 

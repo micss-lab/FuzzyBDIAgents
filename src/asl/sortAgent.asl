@@ -46,7 +46,7 @@ colorDecided(false).
 
 -!samplecolor <- !samplecolor. // .drop_all_intentions; 
 
-
+//Fuzzified Plan decidecolorF
 
 // Replace this "!colorBucket(2) !toPushF(3,Color);" !toBuild for PushForce Experiment
 +!decidecolorF: isitRed(high) & isitGreen(low) & isitBlue(medium)    <-   .print(" $$$$$ RED 1 -HIGH- $$$$$"); resetCounter; .wait(10);sampleColor;?colorRed(high,Color);  ?colorGreen(low,Color2); ?colorBlue(medium,Color3); .print(Color," ",Color2," ",Color3); !toBuild;-+colordecided(true); .wait(20); !samplecolor.  
@@ -114,6 +114,7 @@ colorDecided(false).
 +!decideApplyReverse(Threshold) : Threshold <= 5 <- .print("Not Reverse"); !samplecolor. 
 
 
+//Fuzzified Plan decideRev
 +!decideRev: isit(low)   & reverseBack(low,D1) & D1>0   <-   ?reverseBack(low,D1); .send(shredAgent,achieve,emergencyLocked); .send(shredAgent,achieve,shredend); .print("rev low");  reverseMovementsAction(275,1-D1);  .send(shredAgent,achieve,emergencyUnlocked);  !samplecolor.
 
 +!decideRev: isit(medium)  & reverseBack(medium,D1) & D1>0 <-    ?reverseBack(medium,D1); .send(shredAgent,achieve,emergencyLocked); .send(shredAgent,achieve,shredend); .print("rev medium");   reverseMovementsAction(325,D1); .send(shredAgent,achieve,emergencyUnlocked);   !samplecolor.
