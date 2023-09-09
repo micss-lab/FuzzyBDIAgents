@@ -11,13 +11,17 @@ Inside the root folder, run:
 ant -f bin/build.xml jar  or ant -f bin/productionLine.xml jar  
 java -jar <your application>.jar
 
-In case it fails to close the MAS Console when the JAR build is run, modify the .xml file inside the bin folder as follows
+If it fails to close the MAS Console when the JAR build is run, modify the .xml file inside the bin folder as follows.
 
+=================================================
+```
 <fileset dir="${basedir}">
                 <include name="**/*.asl" />
                 <include name="**/*.mas2j" />
                 <include name="logging.properties" /> -> Add this line.
-            </fileset>
+</fileset>
+```
+=================================================                  
 Extra information:
 
 handlers = jason.runtime.MASConsoleLogHandler -> Opens Java-Swing based console acar.
@@ -25,8 +29,10 @@ handlers = jason.runtime.MASConsoleLogHandler -> Opens Java-Swing based console 
 #handlers= java.util.logging.ConsoleHandler ->    Prints to the black-screen console (not Swingx)
 
 The command for sending the applicationName.JAR to the RaspberryPI 3, the  following command can be used.
+```
 pscp -pw "password" applicationName.jar robot@IP_ADDRESS_RP3:/home/robot 
 java -jar applicationName.java
+```
 
 Sample configuration for running the agents as distributed using the JADE infrastructure provided by Jason.
 -gui parameter must be deleted.
