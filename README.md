@@ -4,7 +4,7 @@
 This is the repo to provide supplementary material for the reproducibility of the fuzzy-BDI approach.
 
 # Deployment Steps # 
-Requirement: Before term definitions and action mappings, there must be sensor and motor configuration of the BrickPI API.
+Requirement: Before term definitions and action mappings, there must be sensor and motor configuration of the BrickPI API. The current environment configuration already applies this.
 
 cd <the root directory of the application>
 Inside the root folder, run:
