@@ -36,6 +36,7 @@ Sample configuration for running the agents as distributed using the JADE infras
 It is also important that for each different environment, the name of the environment must be altered, such as for container 1 it is j_environment:jason.infra.jade.JadeEnvironment, and for container two, it is j2_environment:jason.infra.jade.JadeEnvironment
 
 =============================================
+```
 <target name="Main-Container" depends="compile" >
         <echo message="Starting JADE Container Main-Container" />
         <java classname="jade.Boot" failonerror="true" fork="yes" dir="${basedir}" >
@@ -53,7 +54,7 @@ It is also important that for each different environment, the name of the enviro
             <jvmarg line="-Xmx500M -Xss8M"/>
         </java>
     </target>
-
+```
 
 =================================================
 
